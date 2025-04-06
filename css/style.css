@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+/* Colors */
+:root{
+    --dark-blue: rgb(3, 46, 109);
+    --balck: #090d18;
+    --light-blue: #1e6d7e;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Hello_Whistle;
+    src: url("../fonts/Hello_Whistle.ttf");
+}
+
+@font-face {
+    font-family: JANEETA;
+    src: url("../fonts/JANEETA.ttf");
+}
+
+@font-face {
+    font-family: Winter_Drink;
+    src: url("../fonts/Winter_Drink.ttf");
+}
+
+/* Nav Bar */
+.navbar {
+    background: linear-gradient(Var(--dark-blue), black);
+}
+
+.logo_link{
+    color: white;
+    font-family: Hello_Whistle;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo_link img{
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    margin-right: -20px;
+}
+
+nav .bar_icon{
+    font-size: 1.5em;
+    animation-iteration-count: 2;
+}
+
+nav .nav_icons{
+    color: #ffffff;
+    animation-iteration-count: 1;
+}
+
+nav .nav_icons:hover,
+nav .nav_icons:focus, 
+nav .nav_icons:active{
+    color: yellow;
+}
+
+nav .nav-link{
+    color: white;
+    font-size: 1.5em;
+    font-family: JANEETA;
+}
+
+nav .nav-link:hover {
+    color: yellow;
+}
+
+nav .dropdown-menu{
+    border-radius: 20px;
+}
+
+nav .dropdown-item{
+    font-family: JANEETA;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    border-radius: 10px;
+}
+
+nav .dropdown-item:hover{
+    background: transparent;
+    color: brown;
+    border-left: 10px solid yellow;
+}
+
+button{
+    color: white;
+}
+
+nav .BTN{
+    font-family: JANEETA;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    margin: 5px 100px;
+    font-weight: bold;
+}
+
+nav .BTN:hover {
+    color: var(--dark-blue);
+}
+
+/* Welcome Section */
+.welcome_section{
+    color: white;
+    background-image:
+            linear-gradient(to bottom, var(--balck), transparent),
+            url('../img/bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome_section .wel_sec_header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Winter_Drink;
+    box-shadow: 0px 0px 10px 0px white;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.welcome_section .wel_sec_header h1{
+    font-size: 50px;
+}
+
+.welcome_section .wel_sec_header img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
+.welcome_section .into{
+    width: 70%;
+    text-align: center;
+    font-family: JANEETA;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.welcome_section .into span{
+    font-family: Hello_Whistle;
+    background-color: rgb(255, 255, 255);
+    color: var(--dark-blue);
+    float: right;
+    border-bottom: 5px solid var(--dark-blue);
+    padding: 0px 30px;
+    border-radius: 20px;
+}
+
+/* About Section */
+.about_section,
+.feedback_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px var(--light-blue);
+}
+
+.header h1{
+    color: var(--light-blue);
+    font-family: Winter_Drink;
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+.header img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+}
+
+.about_box,
+.feedback_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.about_txt{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    text-align: center;
+
+    color: var(--dark-blue);
+    font-weight: bold;
+    font-family: JANEETA;
+    font-size: 2em;
+}
+
+.about_box .images{
+    width: 40%;
+}
+
+.images img{
+    width: 500px;
+    height: 400px;
+    animation-name: up_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes up_down{
+    0% {
+        transform: translateY(-25px);
+    }
+
+    50%{
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+/* Feedback Section */
+.feedback_box .images{
+    width: 60%;
+}
+
+.feedback_form{
+    padding: 30px;
+    width: 60%;
+    box-shadow: 0px 0px 10px 0px var(--light-blue);
+    /* border-radius: 20px; */
+    display: flex;
+
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    /* align-self: center; */
+}
+
+.feedback_form form{
+    width: 100%;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+
+    color: var(--dark-blue);
+    font-size: 2em;
+    font-weight: bold;
+    font-family: JANEETA;
+}
+
+.field input,
+.field textarea{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 3px solid var(--light-blue);
+    outline: none;
+}
+
+.field_BTN{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.field_BTN button{
+    width: 200px;
+    height: 50px;
+    margin: 0px 10px;
+    background: transparent;
+    border: 2px solid #1e6d7e;
+    color: var(--light-blue);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: JANEETA;
+    font-weight: bolder;
+}
+
+.field_BTN button:hover {
+    background-color: #1e6d7e;
+    color: #ffffff;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    height: 150px;
+    background: linear-gradient(var(--dark-blue), black);
+    color: white;
+}
+
+footer h1{
+    font-family: JANEETA;
+    font-weight: bolder;
+    box-shadow: 0px 10px 10px 0px white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+footer div ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer div ul li{
+    font-size: 2.5em;
+}
+
+footer div ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer div ul li a:hover {
+    color: yellow;
+}
+
+footer .footer_icon:hover {
+    color: yellow;
+}
