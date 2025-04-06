@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who are you ..?</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Greate Account</h1>
+                <div class="social-icons">
+                    <a href="">
+                        <i class="fa-brands fa-google fa-bounce" style="color: #031a6d;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f fa-bounce" style="color: #032e6d;"></i>
+                    </a>
+                </div>
+                <span>
+                    Or Use Your Email For Regestration
+                </span>
+
+                <input type="text" id="user_name_field" placeholder="User Name .." required>
+                <input type="email" id="user_mail_field"  placeholder="User E-Mail" required>
+                <input type="password" id="user_ps_field"  placeholder="User Password" required maxlength="5">
+
+                <button id="signUP_btn">Sign Up</button>
+            </form>
+        </div>
+        <!-- ------------------------------------- -->
+        <div class="form-container sign-in">
+            <form>
+                <h1>Already Have An Account</h1>
+                <div class="social-icons">
+                    <a href="">
+                        <i class="fa-brands fa-google fa-bounce" style="color: #031a6d;"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f fa-bounce" style="color: #032e6d;"></i>
+                    </a>
+                </div>
+                <span>
+                    Or Use Your Email & Password
+                </span>
+        
+                <input type="email" id="user_mail_field" placeholder="User E-Mail" required>
+                <input type="password" id="user_ps_field"  placeholder="User Password" required minlength="5">
+
+                <a class="forget" href="">Forget Your Password ..?</a>
+
+                <button type="submit"  id="submit_btn">Sign In</button>
+            </form>
+        </div>
+        <!-- ------------------------------------- -->
+        <div class="toogel-container">
+            <div class="toggel">
+                <div class="toggel-panel toggel-left">
+                    <h1>Welcome Back</h1>
+                    <p>
+                        Enter your personal info to use 
+                        all the site fetures
+                    </p>
+                    <button id="login" class="hidden">Sign In</button>
+                </div>
+
+                <div class="toggel-panel toggel-right">
+                    <h1>Hola ..</h1>
+                    <p>
+                        Register with your personal info to use
+                        all the site fetures
+                    </p>
+                    <button id="register" class="hidden">Sign UP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main_login.js"></script>
+    <script src="js/script_login.js"></script>
+</body>
+</html>

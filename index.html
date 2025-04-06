@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    </head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <label class="logo_link">
+                <img src="img/logo white.png" alt="Logo">
+                Nouran
+            </label>
+            <button class="navbar-toggler btn_bar me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars fa-bounce bar_icon me-5"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item me-5">
+                        <a class="nav-link ms-5" aria-current="page" href="#hola">
+                            <i class="fa-solid fa-house-chimney fa-flip nav_icons"></i>
+                            Home</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link ms-5" href="#about">
+                            <i class="fa-regular fa-address-card fa-flip nav_icons"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link ms-5" href="#feedback">
+                            <i class="fa-solid fa-comment-dots fa-flip nav_icons"></i>
+                            Feedback</a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <a class="nav-link ms-5" href="#">
+                            <i class="fa-solid fa-user fa-flip nav_icons"></i>
+                            Profile</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-5" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" id="link">
+                            <i class="fa-solid fa-gamepad fa-flip nav_icons"></i>
+                            Games
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item ms-4" href="game_xo.html">X O Game</a></li>
+                            <li><a class="dropdown-item ms-4" href="#">Another Game</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end ms-5">
+                    <button type="button" class="btn btn-outline-light BTN" onclick="move()">Log In</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="welcome_section">
+        <div class="mb-5 wel_sec_header">
+            <img src="img/logo white.png" alt="logo">
+            <h1 id="hola">Hola Gammer ..!</h1>
+            <img src="img/logo white.png" alt="logo">
+        </div>
+        <div class="into">
+            <p>
+                Welcome to our game website, where fun and excitement await! Get ready to embark on thrilling adventures, challenge
+                your
+                skills, and immerse yourself in captivating gameplay. Whether you're a seasoned gamer or just starting out, our
+                website
+                offers a wide variety of games suitable for all ages and interests. From action-packed adventures to brain-teasing
+                puzzles, there's something here for everyone. So, grab your controller, keyboard, or touchscreen device, and let the
+                gaming begin! <br>
+                <span class="mt-5 mb-5">Nouran S.</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about_section mt-5 mb-5" id="about">
+        <div class="header mb-3">
+            <h1>
+                <img src="img/logo blue.png" alt="logo">
+                About
+                <img src="img/logo blue.png" alt="logo">
+            </h1>
+        </div>
+        <div class="about_box mt-3">
+            <div class="about_txt">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Obcaecati, porro. Illo ad quis asperiores 
+                    exercitationem, suscipit culpa corrupti voluptates 
+                    minima obcaecati accusantium saepe minus ducimus 
+                    quasi nemo autem labore commodi.
+                </p>
+            </div>
+            <div class="images">
+                <img src="img/about.png" alt="play">
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback_section mt-5" id="feedback">
+        <div class="header mb-3">
+            <h1>
+                <img src="img/logo blue.png" alt="logo">
+                Feedback
+                <img src="img/logo blue.png" alt="logo">
+            </h1>
+        </div>
+        <div class="feedback_box mt-3">
+            <div class="images mt-5">
+                <img src="img/feedback.png" alt="play">
+            </div>
+            <div class="feedback_form mt-5">
+                <form>
+                    <div class="field mb-5">
+                        <label for="email">User Email</label>
+                        <input type="email" id="email" placeholder="user@gmail.com">
+                    </div>
+                    <div class="field">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" required cols="30" rows="5" placeholder="Type Something .."></textarea>
+                    </div>
+                    <div class="field_BTN mt-4">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h1>@Nouran S.</h1>
+        <div>
+            <ul>
+                <li class="ms-5 me-5"><a href="#">
+                    <i class="fa-brands fa-github fa-beat footer_icon" style="color: #ffffff;"></i>
+                    GitHub
+                </a></li>
+                <li class="ms-5"><a href="#">
+                    <i class="fa-brands fa-linkedin fa-beat footer_icon" style="color: #ffffff;"></i>
+                    LinkedIn
+                </a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script>
+        function move()
+        {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>
